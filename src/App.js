@@ -65,7 +65,7 @@ function App() {
   return (
     <>
       {students.map(student => 
-        <Student student={student} />
+        <Student key={student.name} student={student} />
       )}
     </>
   )
